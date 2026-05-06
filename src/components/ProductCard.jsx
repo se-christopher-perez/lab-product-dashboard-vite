@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from '../styles/ProductCard.module.css';
+import { colors } from '@mui/material';
 
 const ProductCard = ({ product, handleClick }) => {
 
   return (
-    <div className={product.inStock ? "inStockClass" : "outOfStockClass"} >
+    <div className={product.inStock ? "inStockClass" : "outOfStockClass"} style={{color: product.inStock ? "green" : "red"}} >
       {/* TODO: Apply conditional class to <div> above for out-of-stock items */}
 
       {/* TODO: Display product name */}
